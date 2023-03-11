@@ -1,16 +1,6 @@
 Md Ashraful Alam
 SQA Engineer
-<<<<<<< HEAD
-<<<<<<< HEAD
 Suffix IT
 Skills : Testing,Automation.
-=======
-=======
-Suffix IT ltd
-Badda,Dhaka
->>>>>>> 99c86b55d4a4cbba688d674bd533c7d1e385aca7
-=======
-Suffix IT ltd
-Badda,Dhaka
->>>>>>> 99c86b55d4a4cbba688d674bd533c7d1e385aca7
+
 
