@@ -1,0 +1,261 @@
+===========
+log dear por : aita chole ashe 
+tokhon
+colon abong q dile ager jaigai chole ashbe
+===========
+3.---git take configuration korte hobe.ami git use kortesi shetar akta username email set kore dibo---
+
+git config --global user.name "Ash-Imagination"
+git config --global user.email "2016100000124@seu.edu.bd"
+git config --global user.password "123asdfghJ&"
+
+**global korle jotogula git repository create korbo,shobar jonnoi ai user name, email, pass tai thakbe.
+==========================================================
+4. git config --list
+
+   Ash-Imagination
+   2016100000124@seu.edu.bd
+
+=============TO See My Credential========================
+---------------------------------------------------------
+1. git config user.name
+Ash-Imagination
+	
+2. git config user.email
+2016100000124@seu.edu.bd
+
+=========To Check Present Working Derectory================
+$ pwd
+/c/Users/Abir/Desktop
+=========To Change Working Derectory=======================
+cd NewFolder
+
+=============To Create A Folder============================
+---------------------------------------------------------
+$ mkdir Notes
+
+=============To Enter into A Folder========================
+---------------------------------------------------------
+$ cd Notes
+=============To Go Backward After Entering into A Folder===
+$ cd ..
+
+=============To See the All files inculding (Hidden) in Notes Folder==============
+$ ls -a
+ TMA_App_Version_4.0.7_Update_Log_12_17_2022.txt
+ TMA_Requirement_19-Jan-23.docx
+ TMA_Requirement_19-Jan-23.pdf
+
+===========To Create A txt File============================
+$ touch Git_Notes.txt
+
+==========To Open that txt File============================
+$ notepad Git_Notes.txt
+
+===========TO initialize git repository======================
+
+5. git init r maddhome amra version control korte parbo.
+   .
+==========folder a ki ki documents ache sheita dekhte parbo=======================
+5. git ls -a
+
+--------------------------------------------------------------------------
+===================Working Directory TO Staging a near Way================
+--------------------------------------------------------------------------
+
+==========Jekono specific File Ke Stageing near jonno======================
+7.$ git add Notes.txt
+
+==========Shobgulo File Ke Stageing near jonno=============================
+---------------------------------------------------------------------------
+8.  $ git add -A   (Directory abong Sub-Directory r shob file ke Staging a nie jabe)
+ or $ git add .    (Shudu Directory r shob file ke Staging a nie jabe
+ or $ git add*.txt (txt extension diye joto file ache shob file Staging a chole jabe)
+ or $ git add**/*.txt (Directory abong Sub-Directory r shob txt.extension file ke Staging a nie jabe)
+
+========To discard changes in working directory========================
+-----------------------------------------------------------------------
+9.  $ git restore Git_Notes.txt
+  ***  file a jei changes gulo korechilam changes gulo delete korar jonno***
+
+=======File Ke Stageing theke Unstage a near jonno=====================
+-----------------------------------------------------------------------
+
+10. $ git rm --cached Git_Notes.txt
+
+======================================================================
+11. $ git diff
+
+    Diff dekhar jonno --Prothome file tike add korte hobe
+    then file open kore jodi kono change kore $ git diff chalai tahole
+    ki change korechi sheita dekhte parbo 
+
+-------------================================----------------
+=============================================================
+------------------Staging Stage To Local Repository----------
+=============================================================
+
+---------------------$ git log------------------------
+13. ****HEAD r maddhome amra bujhte pari ami Commit ta nie Kaj kortesi**** 
+   ****Head muloto kon Commit ta nie kaj kortese sheita amra 
+       $ git log dile dekhte parbo
+
+   *** $ git log
+	commit 6f9cc1d6b4cd30b34fb097306fe48792547bf561 (HEAD -> master)
+	Author: Ash-Imagination <2016100000124@seu.edu.bd>
+	Date:   Tue Feb 28 17:50:37 2023 +0600
+
+ 	   logs
+
+   *** $ git log --oneline
+	5d3f7f5 (HEAD -> master) Added
+
+       dei tahole ak line a info ta dekhabe
+       kon branch a achi sheta dekhabe
+
+
+==============Add abong Commit Aksathe korar jonno=====================
+
+14. $ git add Notes.txt && git commit -m "New File Added"
+
+=============Commit Theke Staging Stage a Back korar jonno======================================
+---------------------------------------------------------------
+    ***Commit korar por jodi abr staging obosthai fire jete chai tahole soft reset***
+15. $ git reset --soft HEAD^
+-----------------------------------------
+16. $ git reset HEAD^
+    ***File ti local repo theke shorashori Working Directory te chole ashbe
+-----------------------------------------
+16. $ git reset --hard HEAD^
+    ***Jei file ta commit korechilam sheita jodi delete kore dite chai folder theke***
+ =====================================================
+12. Staging theke Local repo, than Local Repo the Repote Remo.
+
+======================================================
+ Akta specific commit ke koreche abong ki ki changes koreche
+
+13. $ git show 5d3f7f50b1ebc9bee3b1457ff5b432bd05ae51f6
+    HEAD shobshomoi recent commit a thake.
+    $ git checkout commitid dile oi commit a chole jabe
+
+
+----------------------------------------------------------------
+==================Git Checkout====================================
+14. $ git checkout Git_Instructions.txt
+      Updated 1 path from the index
+      
+    git checkout  maddhome undo kora jai.
+    jeishob jinish ami change korechi ta abr ager jaigai chole jabe  
+====================================================
+1. dhori ami ami 3 ta commit korlam
+   $ git log --oneline
+  0ab5864 (HEAD -> master) Log
+  fa9d0be addd
+  5d3f7f5 Added
+
+akhon ami checkout korbo
+
+$ git checkout 5d3f7f5
+Previous HEAD position was fa9d0be addd
+HEAD is now at 5d3f7f5 Added
+
+------------------------------
+$ git checkout master
+  amar recent jei commit shikhane amk nie jabe.
+Previous HEAD position was 5d3f7f5 Added
+Switched to branch 'master'
+
+------------------------------
+
+$ git checkout fa9d0be
+Note: switching to 'fa9d0be'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at fa9d0be addd
+
+
+================GIT Ignore================
+------------------------------------------
+1.  .gitignore
+
+    *.txt     Jei extension file ke remote a nite chai
+   !Git_Commands.txt  jei file ke remote a nite chai
+   IgnoreFolder/	jei folder ke remote a nite na chai
+=======================================================
+   Local repo r sathe Remote repo r connection  korte hoi aibhabe
+----------------------------------------------------------------
+2. $ git remote add origin https://github.com/Ash-Imagination/Git_Documentation.git
+=============Folder jodi delete kore dite chai==========================================
+3. rm -rf Git_Documatation
+==============================
+9. Jokhn e amra commit kore Local Repo te nibo --Tokhn  e amra version control korte parbo
+   ager jaigai fire jete parbo
+============To create a brach==========
+10. $ git branch Second_Branch
+
+=========To Switch to a branch=======
+11. $ git checkout Second_Branch
+
+=========To See All the branch=======
+12.	git branch 
+	git branch -a
+
+=========To Delete the branch=======
+13. git branch -d Second_Branch
+
+============To create a brach and switched to that branch==========
+14. $ git checkout -b "Second_Branch"
+Switched to a new branch 'Second_Branch'
+
+===============================
+4. git checkout main
+   git pull origin master
+
+================================
+
+*****jodi git remote add origin url na dei tahole aita ashbe****
+
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+===============================
+1. kono bug fix korte caile bug r jonno akta brunch create korbo
+   then thik korar por review korbo test korbo than master r sathe merge korbo
+
+2. Amra jekono poriborton ani na kno seta jno master branch kono affect na toiri kore
+   
+===============================
+
+4.
+  Ami jodi repository theke kono file delete kori ba kono changes kori
+  than ami jodi gitbash theke kono kichu push korte chai,
+  tahole prothome amk gitbash theke PULL nie update hote hobe.
+  than ami kono kichu push dite parbo
+
+5. git stash apply
+6. $ git branch -M main
+
+f065c56c56e73461
+
+
+

@@ -1,0 +1,21 @@
+
+		1.Why do we need gitHub?
+---------------------------------------------------
+1. Collaboration korar jonno jekono team member r sathe.
+   ki ki changes korechi sheitake version r maddhome track rakhar jonno.
+ 
+ 
+
+2. Remote Folder ba Repository toiri korbo - GitHub a.
+3. GitHub service provide kore, jekhane amra project folder ba repository rakhte pari.
+4. GitHub amader Hosting facility die thake.
+5. GitHub give us a graphical interface
+		=========================
+1. GitHub r Jei project ta ache shitake amra local a nie ashar jonno GIT software
+   Use korbo.
+2. Porobortite project tar version control, chenges amra git software r maddhome korte parbo
+
+3. Git and GitHub is not same
+4. Git a amra command line kaj korbo.
+5. Git amra locally use korbo, amra jei verision control korar jonno
+   jekono changes ke control korar jonno.
