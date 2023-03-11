@@ -5,3 +5,6 @@ Skills : Testing,Automation.
 Southeast University
 Banani, Dhaka
 Bangladesh
+
+Dept of CSE
+Batch : 43
