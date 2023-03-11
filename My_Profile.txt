@@ -2,6 +2,7 @@ Md Ashraful Alam
 <<<<<<< HEAD
 SQA Engineer
 Suffix IT
+Skills : Testing,Automation.
 =======
 
 >>>>>>> 4fae9d88e84791c1d47a748c73c623eb1c7a1b84
